@@ -1,16 +1,10 @@
 package com.example.pssfacil
 
 import android.os.Bundle
-import android.widget.Toast
-import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.appcompat.app.AppCompatDelegate
-import androidx.core.view.ViewCompat
-import androidx.core.view.WindowInsetsCompat
 import com.example.pssfacil.DAO.ProcessoDAO
-import com.example.pssfacil.databinding.ActivityMainBinding
 import com.example.pssfacil.databinding.ActivityVisualizaProcessoBinding
-import com.example.pssfacil.model.Candidato
 import com.example.pssfacil.model.Processo
 import java.text.NumberFormat
 import java.util.Locale
