@@ -8,12 +8,12 @@ private var conexao = ConnectionSQL()
 class ProcessoDAO {
     fun CarregaProcesso(processo: Processo): Processo? {
         try {
-            var dadoprocesso = Processo()
+            val dadoprocesso = Processo()
             val sql =
                 "SELECT * FROM processos WHERE id = ?"
             val preparedStatement = conexao.dbCon()?.prepareStatement(sql)
             if (preparedStatement != null) {
-                preparedStatement.setString(1, processo.id.toString())
+                preparedStatement.setString(1, processo.id)
             }
 
             val resultSet = preparedStatement?.executeQuery()
@@ -43,7 +43,7 @@ class ProcessoDAO {
 
     fun CarregaListaProcessos(): ArrayList<Processo>? {
         try {
-            var dadoprocesso = Processo()
+            val dadoprocesso = Processo()
             val processos = ArrayList<Processo>()
             val sql =
                 "SELECT * FROM processos"

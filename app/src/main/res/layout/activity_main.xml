@@ -22,7 +22,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView22"
-        android:hint="Email"/>
+        android:hint="@string/email"/>
 
     <TextView
         android:id="@+id/textView22"
@@ -95,7 +95,7 @@
         app:srcCompat="@drawable/logofinal"
         tools:srcCompat="@drawable/logofinal"
         tools:visibility="visible"
-        android:contentDescription="Logo do aplicativo"/>
+        android:contentDescription="@string/logo_do_aplicativo"/>
 
     <Button
         android:id="@+id/button_Cadastrar"

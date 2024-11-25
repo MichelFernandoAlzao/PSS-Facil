@@ -17,6 +17,8 @@
     <string name="entrar">Entrar</string>
     <string name="senha">Senha</string>
     <string name="cadastrar_se">Cadastrar-se</string>
+    <string name="email">Email</string>
+    <string name="logo_do_aplicativo">Logo do aplicativo</string>
 
     <string-array name="Generos">
         <item>Masculino</item>

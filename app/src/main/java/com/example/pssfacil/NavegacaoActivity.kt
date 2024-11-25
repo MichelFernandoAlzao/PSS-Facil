@@ -7,7 +7,6 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.example.pssfacil.Adapter.AdapterProcesso
-import com.example.pssfacil.DAO.ProcessoDAO
 import com.example.pssfacil.databinding.ActivityNavegacaoBinding
 import com.example.pssfacil.model.Candidato
 import com.example.pssfacil.model.Processo
