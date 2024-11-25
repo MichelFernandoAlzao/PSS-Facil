@@ -5,6 +5,7 @@ import android.widget.Button
 import android.widget.Toast
 import androidx.activity.viewModels
 import androidx.appcompat.app.AppCompatActivity
+import androidx.appcompat.app.AppCompatDelegate
 import com.example.pssfacil.Fragments.DadosAcademicos_Fragment
 import com.example.pssfacil.Fragments.DadosPessoais_Fragment
 import com.example.pssfacil.Fragments.DadosProfissionaisFragment
@@ -25,14 +26,18 @@ class Cadastro_Activity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        //enableEdgeToEdge()
         setContentView(R.layout.activity_cadastro)
 
+
+        candidato = Candidato()
+        sharedviewModel.dadosCompartilhados.value = candidato
 
         recuperadados()
         if(candidato.id != 0){
          sharedviewModel.dadosCompartilhados.value = candidato
         }
+
+        AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_NO)
 
         buttonDadosPessoais = findViewById(R.id.btnDadosPessoais)
         buttonDadosPessoais.setOnClickListener {
@@ -92,6 +97,9 @@ class Cadastro_Activity : AppCompatActivity() {
         }
     }
     fun recuperadados(){
-        candidato = intent.getSerializableExtra("candidato") as Candidato
+        var origem = intent.getStringExtra("origem")
+        if(origem != "Entrada"){
+            candidato = intent.getSerializableExtra("candidato") as Candidato
+        }
     }
 }

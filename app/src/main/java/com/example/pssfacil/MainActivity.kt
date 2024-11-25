@@ -4,6 +4,7 @@ import android.content.Intent
 import android.os.Bundle
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
+import androidx.appcompat.app.AppCompatDelegate
 import com.example.pssfacil.DAO.LoginDAO
 import com.example.pssfacil.databinding.ActivityMainBinding
 import com.example.pssfacil.model.Candidato
@@ -15,8 +16,9 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivityMainBinding.inflate(layoutInflater)
-        //enableEdgeToEdge()
         setContentView(binding.root)
+
+        AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_NO)
 
         binding.buttonLogar.setOnClickListener {
 
@@ -43,6 +45,7 @@ class MainActivity : AppCompatActivity() {
 
         binding.buttonCadastrar.setOnClickListener {
             val intent = Intent(this,Cadastro_Activity::class.java)
+            intent.putExtra("origem","Entrada")
             startActivity(intent)
 
         }

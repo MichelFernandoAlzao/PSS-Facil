@@ -4,6 +4,7 @@ import android.content.Intent
 import android.os.Bundle
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
+import androidx.appcompat.app.AppCompatDelegate
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.example.pssfacil.Adapter.AdapterProcesso
@@ -23,8 +24,9 @@ class NavegacaoActivity : AppCompatActivity(), AdapterProcesso.ClickProcesso {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivityNavegacaoBinding.inflate(layoutInflater)
-        //enableEdgeToEdge()
         setContentView(binding.root)
+
+        AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_NO)
 
         recuperadados()
 
@@ -98,6 +100,7 @@ class NavegacaoActivity : AppCompatActivity(), AdapterProcesso.ClickProcesso {
 
         binding.btnCadastro.setOnClickListener {
             val intent = Intent(this,Cadastro_Activity::class.java)
+            intent.putExtra("origem","Navegacao")
             intent.putExtra("candidato",candidato)
             startActivity(intent)
         }

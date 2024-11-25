@@ -6,7 +6,8 @@
     android:layout_margin="50dp"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
-    tools:context=".Fragments.TermosDeAdesaoFragment">
+    tools:context=".Fragments.TermosDeAdesaoFragment"
+    android:background="@color/white">
 
     <ScrollView
         android:id="@+id/SCROLLER_ID"
@@ -71,6 +72,7 @@ Se você tiver dúvidas sobre nossos termos e políticas, não hesite em entrar 
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:backgroundTint="#C33764"
+        android:textColor="@color/white"
         android:text="@string/aceitar"
         app:cornerRadius="@dimen/cardview_compat_inset_shadow"
         tools:ignore="VisualLintButtonSize" />
@@ -80,6 +82,7 @@ Se você tiver dúvidas sobre nossos termos e políticas, não hesite em entrar 
         android:layout_width="match_parent"
         android:layout_height="48dp"
         android:backgroundTint="#C33764"
+        android:textColor="@color/white"
         android:text="@string/sair"
         app:cornerRadius="@dimen/cardview_compat_inset_shadow"
         tools:ignore="VisualLintButtonSize" />

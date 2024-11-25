@@ -7,7 +7,8 @@ import java.sql.DriverManager
 import java.sql.SQLException
 
 class ConnectionSQL {
-    private val ip="192.168.15.104:1975"
+    private val ip="pssfacil.ddns.net:1975"
+    //private val ip="192.168.15.104:1975"
     private val db="PSSFacil"
     private val username="Michel"
     private val senha="Michel11041997@"
