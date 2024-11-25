@@ -1,0 +1,28 @@
+<resources>
+    <string name="app_name">PSS Facil</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_nevagacao">Nevagacao_Activity</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications" formatted="true">Notifications</string>
+    <string name="dados_academicos" formatted="true">Formação</string>
+    <string name="dados_profissionais" formatted="true">Currículo</string>
+    <string name="dados_basicos" formatted="true">Perfil</string>
+    <string name="aceitar">Aceitar</string>
+    <string name="sair">Sair</string>
+    <string name="cadastrar">Cadastrar</string>
+
+    <string-array name="Generos">
+        <item>Masculino</item>
+        <item>Feminino</item>
+        <item>Outros</item>
+    </string-array>
+
+    <string-array name="EstadoCivil">
+        <item>Solteiro</item>
+        <item>Casado</item>
+        <item>Divorciado</item>
+        <item>Viuvo(a)</item>
+    </string-array>
+</resources>

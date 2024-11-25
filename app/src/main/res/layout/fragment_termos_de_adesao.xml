@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="50dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    tools:context=".Fragments.TermosDeAdesaoFragment">
+
+    <ScrollView
+        android:id="@+id/SCROLLER_ID"
+        android:layout_width="match_parent"
+        android:layout_height="640dp"
+        android:fillViewport="true"
+        android:scrollbars="vertical">
+
+        <TextView
+            android:id="@+id/txtTermo"
+            android:layout_width="match_parent"
+            android:layout_height="640dp"
+            android:isScrollContainer="true"
+            android:scrollbars="vertical"
+            android:text="Bem-vindo ao PSS Fácil! Ao acessar e utilizar nossa plataforma, você concorda com os termos e condições descritos abaixo. Este documento tem como objetivo explicar suas responsabilidades ao fornecer dados pessoais, documentos e informações solicitadas, bem como como tratamos suas informações pessoais e garantimos sua privacidade.
+
+1. Responsabilidades do Usuário
+
+Ao utilizar o sistema, você se compromete a fornecer informações verídicas, completas e atualizadas. O fornecimento de dados pessoais e documentos falsos ou fraudulentos é de sua exclusiva responsabilidade e poderá resultar em sanções legais, além de impossibilitar o uso do sistema. Você declara que os dados fornecidos são corretos e autoriza o uso dessas informações para os fins relacionados aos serviços prestados pela plataforma.
+
+O usuário também é responsável por manter a confidencialidade de seus dados de acesso, como login e senha, sendo responsável por qualquer atividade realizada em sua conta. Caso perceba qualquer uso não autorizado de sua conta, deve notificar imediatamente a equipe de suporte.
+
+2. Coleta e Uso de Dados Pessoais
+
+Ao utilizar o sistema, coletamos informações pessoais fornecidas diretamente por você, como nome, e-mail, CPF, documentos, entre outros dados necessários para viabilizar o uso da plataforma. Também podemos coletar dados de navegação, como endereço IP, tipo de dispositivo e informações sobre como você interage com nosso sistema.
+
+Esses dados são utilizados para processar e validar suas informações, melhorar nossos serviços, realizar comunicação necessária (como notificações sobre atualizações do sistema) e cumprir obrigações legais. A coleta de dados pode ser necessária para garantir o bom funcionamento da plataforma e a segurança das suas interações.
+
+3. Armazenamento e Segurança dos Dados
+
+Nosso sistema adota medidas de segurança para proteger suas informações contra acessos não autorizados, alteração ou divulgação. No entanto, é importante que você saiba que nenhum sistema é 100% seguro, e por isso recomendamos que você também adote boas práticas para proteger seus dados de acesso.
+
+4. Compartilhamento de Dados
+
+Os dados pessoais fornecidos não serão compartilhados com terceiros, salvo nas situações em que:
+
+For exigido por lei ou por determinação judicial.
+Você expressamente autorizar.
+For necessário para a execução dos serviços contratados, com respeito à sua privacidade e direitos.
+5. Direitos sobre Seus Dados Pessoais
+
+Você tem o direito de acessar, corrigir ou excluir seus dados pessoais a qualquer momento. Além disso, pode solicitar restrições sobre o uso de seus dados, bem como revogar o consentimento dado, sem afetar a legalidade do uso dos dados anteriormente coletados. Para exercer esses direitos, basta entrar em contato com nossa equipe de suporte.
+
+6. Alterações nos Termos e Condições
+
+Este Termo de Responsabilidade e Política de Privacidade pode ser atualizado periodicamente. Quaisquer modificações substanciais serão notificadas, e você poderá continuar a utilizar o sistema se concordar com as novas condições. Caso não concorde com as mudanças, você poderá descontinuar o uso da plataforma a qualquer momento.
+
+7. Aceite dos Termos
+
+Ao acessar e utilizar este sistema, você declara que leu, compreendeu e aceita integralmente os termos e condições aqui estabelecidos. Caso não concorde com qualquer um dos termos descritos, pedimos que não utilize a plataforma.
+
+8. Legislação Aplicável e Foro
+
+Este Termo de Responsabilidade e Política de Privacidade será regido pelas leis da [jurisdição aplicável], sendo eleito o foro da cidade de [cidade], para resolver qualquer controvérsia decorrente do uso da plataforma.
+
+Se você tiver dúvidas sobre nossos termos e políticas, não hesite em entrar em contato com nossa equipe de suporte. Estamos à disposição para esclarecer qualquer questão." />
+    </ScrollView>
+
+
+    <Button
+        android:id="@+id/btnAceitar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#C33764"
+        android:text="@string/aceitar"
+        app:cornerRadius="@dimen/cardview_compat_inset_shadow"
+        tools:ignore="VisualLintButtonSize" />
+
+    <Button
+        android:id="@+id/btnSair"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:backgroundTint="#C33764"
+        android:text="@string/sair"
+        app:cornerRadius="@dimen/cardview_compat_inset_shadow"
+        tools:ignore="VisualLintButtonSize" />
+</LinearLayout>
