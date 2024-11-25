@@ -1,6 +1,5 @@
 package com.example.pssfacil.DAO
 
-import com.example.pssfacil.model.Candidato
 import com.example.pssfacil.model.Processo
 import java.sql.SQLException
 
@@ -10,7 +9,6 @@ class ProcessoDAO {
     fun CarregaProcesso(processo: Processo): Processo? {
         try {
             var dadoprocesso = Processo()
-            val processos = ArrayList<Processo>()
             val sql =
                 "SELECT * FROM processos WHERE id = ?"
             val preparedStatement = conexao.dbCon()?.prepareStatement(sql)

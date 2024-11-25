@@ -83,7 +83,7 @@ class NavegacaoActivity : AppCompatActivity(), AdapterProcesso.ClickProcesso {
         recyclerViewItens.layoutManager = LinearLayoutManager(this,LinearLayoutManager.VERTICAL,false)
         recyclerViewItens.setHasFixedSize(true)
         //Configura o adaptador
-        var listaProcessos: MutableList<Processo> = mutableListOf()
+        val listaProcessos: MutableList<Processo> = mutableListOf()
         val adapterProcesso = AdapterProcesso(this,listaProcessos,this)
         recyclerViewItens.adapter = adapterProcesso
 
@@ -119,17 +119,17 @@ class NavegacaoActivity : AppCompatActivity(), AdapterProcesso.ClickProcesso {
     fun recuperadados(){
         candidato = intent.getSerializableExtra("candidato") as Candidato
 
-        Toast.makeText(this, "Bem vindo " + candidato.nome_completo.toString(), Toast.LENGTH_SHORT).show()
+        Toast.makeText(this, "Bem vindo " + candidato.nome_completo, Toast.LENGTH_SHORT).show()
     }
 
-    fun carregalistaprocessos(){
-        val processoslistados = ProcessoDAO()
-        var processosrecuperados  = processoslistados.CarregaListaProcessos()
-
-        if(processosrecuperados != null){
-            processoscarregados = processosrecuperados
-        }
-
-    }
+//    fun carregalistaprocessos(){
+//        val processoslistados = ProcessoDAO()
+//        var processosrecuperados  = processoslistados.CarregaListaProcessos()
+//
+//        if(processosrecuperados != null){
+//            processoscarregados = processosrecuperados
+//        }
+//
+//    }
 
 }

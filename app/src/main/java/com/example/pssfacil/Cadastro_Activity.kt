@@ -1,22 +1,15 @@
 package com.example.pssfacil
 
-import android.content.Intent
 import android.os.Bundle
 import android.widget.Button
 import android.widget.Toast
-import androidx.activity.enableEdgeToEdge
 import androidx.activity.viewModels
 import androidx.appcompat.app.AppCompatActivity
-import androidx.core.view.ViewCompat
-import androidx.core.view.WindowInsetsCompat
 import com.example.pssfacil.Fragments.DadosAcademicos_Fragment
 import com.example.pssfacil.Fragments.DadosPessoais_Fragment
 import com.example.pssfacil.Fragments.DadosProfissionaisFragment
 import com.example.pssfacil.Fragments.TermosDeAdesaoFragment
 import com.example.pssfacil.model.ModelCadastro
-import com.google.android.material.tabs.TabItem
-import androidx.fragment.app.Fragment
-import androidx.navigation.navArgs
 import com.example.pssfacil.model.Candidato
 
 class Cadastro_Activity : AppCompatActivity() {

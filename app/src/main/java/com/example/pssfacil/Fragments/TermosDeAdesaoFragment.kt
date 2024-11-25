@@ -9,8 +9,6 @@ import android.widget.TextView
 import android.widget.Toast
 import androidx.fragment.app.activityViewModels
 import com.example.pssfacil.DAO.CandidatoDAO
-import com.example.pssfacil.R
-import com.example.pssfacil.databinding.FragmentDadosPessoaisBinding
 import com.example.pssfacil.databinding.FragmentTermosDeAdesaoBinding
 import com.example.pssfacil.model.Candidato
 import com.example.pssfacil.model.ModelCadastro
@@ -54,7 +52,6 @@ class TermosDeAdesaoFragment : Fragment() {
     ): View? {
         binding = FragmentTermosDeAdesaoBinding.inflate(inflater, container, false)
         return binding.root
-        return view
     }
 
     companion object {
@@ -88,7 +85,7 @@ class TermosDeAdesaoFragment : Fragment() {
         binding.btnAceitar.setOnClickListener(){
 
             val verificaaceite = CandidatoDAO()
-            var retorno = verificaaceite.verificaaceitetermos(Candidato)
+            val retorno = verificaaceite.verificaaceitetermos(Candidato)
             if(retorno.aceite_termos != ""){
                 Toast.makeText (context, "Candidato já aceitou os termos em " + retorno.data_aceite + "!!", Toast.LENGTH_SHORT).show()
                 return@setOnClickListener

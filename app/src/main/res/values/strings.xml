@@ -12,6 +12,11 @@
     <string name="aceitar">Aceitar</string>
     <string name="sair">Sair</string>
     <string name="cadastrar">Cadastrar</string>
+    <string name="termos">Termos</string>
+    <string name="usuario">Usuario</string>
+    <string name="entrar">Entrar</string>
+    <string name="senha">Senha</string>
+    <string name="cadastrar_se">Cadastrar-se</string>
 
     <string-array name="Generos">
         <item>Masculino</item>

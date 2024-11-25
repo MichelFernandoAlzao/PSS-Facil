@@ -21,7 +21,8 @@
         app:layout_constraintBottom_toTopOf="@+id/textView23"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView22" />
+        app:layout_constraintTop_toBottomOf="@+id/textView22"
+        android:hint="Email"/>
 
     <TextView
         android:id="@+id/textView22"
@@ -30,7 +31,7 @@
         android:layout_marginStart="32dp"
         android:layout_marginTop="50dp"
         android:layout_marginEnd="229dp"
-        android:text="Usuario"
+        android:text="@string/usuario"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
@@ -44,7 +45,7 @@
         android:layout_marginEnd="32dp"
         android:layout_marginBottom="50dp"
         android:backgroundTint="#000000"
-        android:text="Entrar"
+        android:text="@string/entrar"
         android:textColor="@color/white"
         app:cornerRadius="@dimen/cardview_compat_inset_shadow"
         app:layout_constraintBottom_toTopOf="@+id/button_Cadastrar"
@@ -65,7 +66,8 @@
         android:minHeight="48dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView23" />
+        app:layout_constraintTop_toBottomOf="@+id/textView23"
+        android:hint="Senha"/>
 
     <TextView
         android:id="@+id/textView23"
@@ -74,7 +76,7 @@
         android:layout_marginStart="32dp"
         android:layout_marginTop="8dp"
         android:layout_marginEnd="229dp"
-        android:text="Senha"
+        android:text="@string/senha"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/txtusuario" />
@@ -92,7 +94,8 @@
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/logofinal"
         tools:srcCompat="@drawable/logofinal"
-        tools:visibility="visible" />
+        tools:visibility="visible"
+        android:contentDescription="Logo do aplicativo"/>
 
     <Button
         android:id="@+id/button_Cadastrar"
@@ -102,7 +105,7 @@
         android:layout_marginEnd="32dp"
         android:layout_marginBottom="8dp"
         android:backgroundTint="#C33764"
-        android:text="Cadastrar-se"
+        android:text="@string/cadastrar_se"
         android:textColor="@color/white"
         app:cornerRadius="@dimen/cardview_compat_inset_shadow"
         app:layout_constraintBottom_toBottomOf="parent"
