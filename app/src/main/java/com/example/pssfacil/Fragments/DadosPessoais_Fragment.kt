@@ -200,6 +200,13 @@ class DadosPessoais_Fragment : Fragment() {
             }
         }
 
+        binding.edtTxtSenha.onFocusChangeListener = View.OnFocusChangeListener{v,hasFocus->
+            if(hasFocus == false){
+                Candidato.senha = binding.edtTxtSenha.text.toString()
+                sharedViewModel.dadosCompartilhados.value = Candidato
+            }
+        }
+
         binding.btnCadastrar.setOnClickListener(){
             //Verificação se já não existe cadastro com este cpf ou email
             val verificarcadastro = CandidatoDAO()
@@ -338,6 +345,9 @@ class DadosPessoais_Fragment : Fragment() {
 
         if(sharedViewModel.dadosCompartilhados.value?.telefone.toString() != "")
             binding.editTextPhone.setText(sharedViewModel.dadosCompartilhados.value?.telefone.toString())
+
+        if(sharedViewModel.dadosCompartilhados.value?.senha.toString() != "")
+            binding.edtTxtSenha.setText(sharedViewModel.dadosCompartilhados.value?.senha.toString())
 
         if(sharedViewModel.dadosCompartilhados.value?.sexo != "")
             binding.spinGenero.setSelection(posGenero)

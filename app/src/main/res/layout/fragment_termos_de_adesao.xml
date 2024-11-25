@@ -1,28 +1,30 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/linearLayout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:layout_margin="50dp"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:orientation="vertical"
+    android:background="@color/white"
     tools:context=".Fragments.TermosDeAdesaoFragment"
-    android:background="@color/white">
+    tools:layout_editor_absoluteX="50dp"
+    tools:layout_editor_absoluteY="50dp">
 
-    <ScrollView
-        android:id="@+id/SCROLLER_ID"
-        android:layout_width="match_parent"
-        android:layout_height="640dp"
-        android:fillViewport="true"
-        android:scrollbars="vertical">
 
-        <TextView
-            android:id="@+id/txtTermo"
-            android:layout_width="match_parent"
-            android:layout_height="640dp"
-            android:isScrollContainer="true"
-            android:scrollbars="vertical"
-            android:text="Bem-vindo ao PSS Fácil! Ao acessar e utilizar nossa plataforma, você concorda com os termos e condições descritos abaixo. Este documento tem como objetivo explicar suas responsabilidades ao fornecer dados pessoais, documentos e informações solicitadas, bem como como tratamos suas informações pessoais e garantimos sua privacidade.
+    <TextView
+        android:id="@+id/txtTermo"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:isScrollContainer="true"
+        android:scrollbars="vertical"
+        app:layout_constraintBottom_toTopOf="@+id/btnAceitar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:text="Bem-vindo ao PSS Fácil! Ao acessar e utilizar nossa plataforma, você concorda com os termos e condições descritos abaixo. Este documento tem como objetivo explicar suas responsabilidades ao fornecer dados pessoais, documentos e informações solicitadas, bem como como tratamos suas informações pessoais e garantimos sua privacidade.
 
 1. Responsabilidades do Usuário
 
@@ -63,27 +65,39 @@ Ao acessar e utilizar este sistema, você declara que leu, compreendeu e aceita 
 
 Este Termo de Responsabilidade e Política de Privacidade será regido pelas leis da [jurisdição aplicável], sendo eleito o foro da cidade de [cidade], para resolver qualquer controvérsia decorrente do uso da plataforma.
 
-Se você tiver dúvidas sobre nossos termos e políticas, não hesite em entrar em contato com nossa equipe de suporte. Estamos à disposição para esclarecer qualquer questão." />
-    </ScrollView>
+Se você tiver dúvidas sobre nossos termos e políticas, não hesite em entrar em contato com nossa equipe de suporte. Estamos à disposição para esclarecer qualquer questão."
+        app:layout_constraintTop_toTopOf="parent" />
 
 
     <Button
         android:id="@+id/btnAceitar"
-        android:layout_width="match_parent"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
         android:backgroundTint="#C33764"
-        android:textColor="@color/white"
         android:text="@string/aceitar"
+        android:textColor="@color/white"
         app:cornerRadius="@dimen/cardview_compat_inset_shadow"
+        app:layout_constraintBottom_toTopOf="@+id/btnSair"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtTermo"
         tools:ignore="VisualLintButtonSize" />
 
     <Button
         android:id="@+id/btnSair"
-        android:layout_width="match_parent"
-        android:layout_height="48dp"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="8dp"
         android:backgroundTint="#C33764"
-        android:textColor="@color/white"
         android:text="@string/sair"
+        android:textColor="@color/white"
         app:cornerRadius="@dimen/cardview_compat_inset_shadow"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnAceitar"
         tools:ignore="VisualLintButtonSize" />
-</LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
