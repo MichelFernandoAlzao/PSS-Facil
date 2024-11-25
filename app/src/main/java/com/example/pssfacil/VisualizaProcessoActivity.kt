@@ -25,15 +25,15 @@ class VisualizaProcessoActivity : AppCompatActivity() {
         //Recupera a id passada pela tela de navegação
         //recuperadados()
 
-        var novo = Processo()
+        val novo = Processo()
         processo = novo
         processo.id = "1"
         //Carrega o processo a ser exibido
         carregaprocesso()
 
-        binding.txtNomeProcesso.text = processo.nomeProcesso.toString()
-        binding.txtDescricaoProcesso.text = processo.descricaoProcesso.toString()
-        binding.txtorgResponsavel.text = processo.orgao_responsavel.toString()
+        binding.txtNomeProcesso.text = processo.nomeProcesso
+        binding.txtDescricaoProcesso.text = processo.descricaoProcesso
+        binding.txtorgResponsavel.text = processo.orgao_responsavel
         binding.txtRemuneracao.text = formatarMoedaPersonalizada(processo.remuneracao.toDouble())
 
         binding.btnAplicar.setOnClickListener() {
@@ -44,16 +44,16 @@ class VisualizaProcessoActivity : AppCompatActivity() {
 
     fun carregaprocesso() {
         val carregaprocesso = ProcessoDAO()
-        var processoretornado = carregaprocesso.CarregaProcesso(processo)
+        val processoretornado = carregaprocesso.CarregaProcesso(processo)
         if (processoretornado != null) {
             processo = processoretornado
         }
     }
 
-    fun recuperadados() {
-        //processo.id = intent.getStringExtra("id").toString()
-        processo.id = "1"
-    }
+//    fun recuperadados() {
+//        //processo.id = intent.getStringExtra("id").toString()
+//        processo.id = "1"
+//    }
 
     fun formatarMoedaPersonalizada(valor: Double): String {
         val locale = Locale("pt", "BR") // Português do Brasil
