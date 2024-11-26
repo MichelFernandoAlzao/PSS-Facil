@@ -32,16 +32,16 @@ class NavegacaoActivity : AppCompatActivity(), AdapterProcesso.ClickProcesso {
 
         val processoexemplo = Processo(
             "0",
-            R.drawable.curitibalogo,
-            "PSS Nome Exemplo",
-            "Processo seletivo da prefeitura de Curitiba mostrado como exemplo",
+            R.drawable.utfprlogo,
+            "PSS Seleção de Docentes UTFPR",
+            "Processo seletivo da UTFPR",
             "31/12/2024"
         )
 
         val processoexemplo2 = Processo(
             "1",
             R.drawable.pmpr,
-            "PSS Nome Exemplo 2",
+            "PSS Seleção PMPR",
             "Processo seletivo da Policia Militar como exemplo",
             "25/12/2024"
         )
@@ -49,32 +49,32 @@ class NavegacaoActivity : AppCompatActivity(), AdapterProcesso.ClickProcesso {
         val processoexemplo3 = Processo(
             "2",
             R.drawable.utfprlogo,
-            "PSS Nome Exemplo 3",
-            "Processo seletivo da UTFPR como exemplo",
+            "PSS Processo para Corpo Juridico UTFPR",
+            "Composição do corpo juridico da UTFPR",
             "25/11/2024"
         )
 
         val processoexemplo4 = Processo(
             "3",
             R.drawable.utfprlogo,
-            "PSS Nome Exemplo 3",
-            "Processo seletivo da UTFPR como exemplo",
+            "PSS UTFPT Auxiliares Gerais",
+            "Processo seletivo da UTFPR de auxiliares gerais",
             "25/11/2024"
         )
 
         val processoexemplo5 = Processo(
             "4",
             R.drawable.curitibalogo,
-            "PSS Nome Exemplo",
-            "Processo seletivo da prefeitura de Curitiba mostrado como exemplo",
+            "PSS Prefeitura de Curitiba",
+            "Processo seletivo da prefeitura de Curitiba para professores de creche!",
             "31/12/2024"
         )
 
         val processoexemplo6 = Processo(
             "5",
-            R.drawable.utfprlogo,
-            "PSS Nome Exemplo 3",
-            "Processo seletivo da UTFPR como exemplo",
+            R.drawable.pmpr,
+            "PSS para socorrista interno PMPR",
+            "Processo seletivo para composição do corpo de saude da PMPR",
             "25/11/2024"
         )
 

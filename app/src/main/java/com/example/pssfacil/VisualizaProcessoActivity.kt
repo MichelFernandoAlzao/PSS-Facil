@@ -1,11 +1,14 @@
 package com.example.pssfacil
 
 import android.os.Bundle
+import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import androidx.appcompat.app.AppCompatDelegate
 import com.example.pssfacil.DAO.ProcessoDAO
+import com.example.pssfacil.DAO.ReservasDAO
 import com.example.pssfacil.databinding.ActivityVisualizaProcessoBinding
 import com.example.pssfacil.model.Processo
+import com.example.pssfacil.model.Reserva
 import java.text.NumberFormat
 import java.util.Locale
 
@@ -38,6 +41,31 @@ class VisualizaProcessoActivity : AppCompatActivity() {
 
         binding.btnAplicar.setOnClickListener() {
 
+            val verificareserva = ReservasDAO()
+            var reserva = Reserva()
+            if(verificareserva.verificareserva("1","13")){
+                Toast.makeText(
+                    this,
+                    "Você já se candidatou para esta vaga!",
+                    Toast.LENGTH_SHORT).show()
+            }
+            else{
+                val inserereserva = ReservasDAO()
+                var reserva = Reserva()
+                inserereserva.InsereCadastro("1","13")
+                if(inserereserva.resultado == "Sucesso"){
+                    Toast.makeText(
+                        this,
+                        "Reserva realizada com sucesso!",
+                        Toast.LENGTH_SHORT).show()
+                }
+                else{
+                    Toast.makeText(
+                        this,
+                        "Ocorreu um erro ao realizar a reserva, contate o suporte!!",
+                        Toast.LENGTH_SHORT).show()
+                }
+            }
         }
 
     }

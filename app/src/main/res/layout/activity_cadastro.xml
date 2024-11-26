@@ -18,13 +18,13 @@
 
     <Button
         android:id="@+id/btnDadosPessoais"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
+        android:layout_width="106dp"
+        android:layout_height="73dp"
         android:backgroundTint="#000000"
         android:text="@string/dados_basicos"
         android:textColor="@color/white"
-        app:cornerRadius="@dimen/cardview_compat_inset_shadow"
         android:textSize="11sp"
+        app:cornerRadius="@dimen/cardview_compat_inset_shadow"
         app:layout_constraintBottom_toTopOf="@+id/ContainerCadastro"
         app:layout_constraintEnd_toStartOf="@+id/Linha1"
         app:layout_constraintStart_toStartOf="parent"
@@ -38,7 +38,7 @@
         android:text="@string/dados_academicos"
         app:cornerRadius="@dimen/cardview_compat_inset_shadow"
         android:textColor="@color/white"
-        android:textSize="11sp"
+        android:textSize="10sp"
         app:layout_constraintBottom_toTopOf="@+id/guideline2"
         app:layout_constraintEnd_toStartOf="@+id/guideline4"
         app:layout_constraintStart_toStartOf="@+id/Linha1"
@@ -111,7 +111,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        app:layout_constraintGuide_percent="0.0013679891" />
+        app:layout_constraintGuide_percent="0.0027359782" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
